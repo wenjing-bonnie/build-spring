@@ -17,6 +17,7 @@ public class FirstServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
+        resp.setStatus(HttpServletResponse.SC_FOUND);
         String count = req.getParameter("count");
         PrintWriter writer = resp.getWriter();
         writer.write(String.format("<h1> Hello Web %s ,This is a simple web!</h1>",count));
