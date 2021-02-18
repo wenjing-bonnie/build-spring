@@ -6,9 +6,6 @@ package com.wj.mvc;
 
 public class BookController {
 
-    public BookController() {
-
-    }
 
     /**
      * 根据用户购买的图片获取图书价格，当然在实际的处理要比这个复杂
