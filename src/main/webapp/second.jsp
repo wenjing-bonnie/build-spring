@@ -1,29 +1,29 @@
-<%-- ÓÃÀ´½â¾öÖÐÎÄÔÚä¯ÀÀÆ÷ÂÒÂëµÄÎÊÌâ --%>
-<%@page language="java" import="java.util.*" contentType="text/html; charset=GB2312"  %>
+<%-- ç”¨æ¥è§£å†³ä¸­æ–‡åœ¨æµè§ˆå™¨ä¹±ç çš„é—®é¢˜ --%>
+<%@page language="java" import="java.util.*" contentType="text/html; charset=UTF-8"  %>
 <html>
     <head>
         <title>First JSP</title>
     </head>
 
     <body>
-    <%-- ÕâÊÇÒ»¸öJSP×¢ÊÍÊ¾Àý·½Ê½ --%>
-        <h1> ÕâÊÇÍ¨¹ý JSP äÖÈ¾µÄÒ³Ãæ</h1>
+    <%-- è¿™æ˜¯ä¸€ä¸ªJSPæ³¨é‡Šç¤ºä¾‹æ–¹å¼ --%>
+        <h1> è¿™æ˜¯é€šè¿‡ JSP æ¸²æŸ“çš„é¡µé¢</h1>
         <p>
-    <%-- ÕâÊÇÒ»¸öÌí¼ÓJava´úÂëÊ¾Àý·½Ê½ --%>
+    <%-- è¿™æ˜¯ä¸€ä¸ªæ·»åŠ Javaä»£ç ç¤ºä¾‹æ–¹å¼ --%>
             <%
-                out.println("ÕâÊÇÍ¨¹ýjavaÊä³öµÄÎÄ×Ö,»ñÈ¡urlÖÐµÄkeyÎª");
+                out.println("è¿™æ˜¯é€šè¿‡javaè¾“å‡ºçš„æ–‡å­—,èŽ·å–urlä¸­çš„keyä¸º");
 
              %>
-        <%-- ÐÐÄÚÔªËØ±êÇ© --%>
+        <%-- è¡Œå†…å…ƒç´ æ ‡ç­¾ --%>
             <span style="color:yellowgreen">
                 <%= request.getParameter("key")%>
             </span>
         </p>
          <p>
-             <%-- ·½·¨ºÍ±äÁ¿µÄÉùÃ÷ --%>
+             <%-- æ–¹æ³•å’Œå˜é‡çš„å£°æ˜Ž --%>
              <%! int count = 1;%>
             <%
-                out.println(String.format("³õÊ¼»¯µÄcountµÄÖµÎª%d",count));
+                out.println(String.format("åˆå§‹åŒ–çš„countçš„å€¼ä¸º%d",count));
             %>
         </p>
         <p>
