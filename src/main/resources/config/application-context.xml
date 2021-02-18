@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="registerService" class="com.wj.spring.RegisterService">
+        <property name="messageService" ref="messageService"/>
+    </bean>
+
+    <bean id="messageService" class="com.wj.spring.MessageService">
+
+    </bean>
+
+    <!-- 等价于
+        MessageService messageService = new MessageService();
+        RegisterService registerService = new RegisterService();
+        registerService.setMessageService(messageService);
+    -->
+
+</beans>

@@ -5,6 +5,8 @@ package com.wj.mvc;
  */
 
 public class CustomerController {
+    private SqlDataBase sqlDataBase;
+
     /**
      * 根据用户id获取用户的名字
      *
@@ -13,6 +15,8 @@ public class CustomerController {
      */
     public Customer getCustomer(long memberId) {
         Customer customer = new Customer();
+        //模拟查询数据库
+        sqlDataBase.query(memberId);
         customer.memberId = memberId;
         customer.memberName = "小刘";
         return customer;
