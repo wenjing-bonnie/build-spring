@@ -26,7 +26,7 @@ public class RegisterService {
             System.err.println("还没有初始化MessageService");
             return user;
         }
-        messageService.sendRegisteSuccessMessage(phone);
+        messageService.sendRegisterSuccessMessage(phone);
         return user;
 
     }
