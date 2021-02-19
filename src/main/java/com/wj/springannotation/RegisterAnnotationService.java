@@ -3,14 +3,17 @@ package com.wj.springannotation;
 import com.wj.spring.SqlDataBase;
 import com.wj.spring.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 /**
  * Created by wenjing.liu on 2021/2/18 in J1.
  */
 @Component
+@Scope("prototype")
 public class RegisterAnnotationService {
     //   @Autowired将指定类型的Bean直接注入到指定的字段
+    //
     @Autowired
     private MessageAnnotationService messageAnnotationService;
 

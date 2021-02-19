@@ -24,6 +24,5 @@ public class RegisterApplication {
         User user = service.register("12345678901", "123456");
         System.out.println("注册之后的用户名为：" + user.name);
 
-
     }
 }

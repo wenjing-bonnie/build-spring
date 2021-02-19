@@ -21,18 +21,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @Configuration  //用来标明是一个配置类，在创建AnnotationConfigApplicationContext,需要传入该类
 @ComponentScan //用来告诉容器，自动扫描当前类所在的包以及子包，把所有标注为@Component的Bean都自动创建出来，并根据@Autowired进行装配
-
 public class RegisterAnnotationApplication {
 
 
     public static void main(String[] args) {
        ApplicationContext context = new  AnnotationConfigApplicationContext(RegisterAnnotationApplication.class);
-
         RegisterAnnotationService service = context.getBean(RegisterAnnotationService.class);
         //RegisterService service = (RegisterService)context.getBean("registerService");
         User user = service.register("12345678901", "123456");
         System.out.println("注册之后的用户名为：" + user.name);
-
-
     }
 }
