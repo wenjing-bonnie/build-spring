@@ -19,14 +19,18 @@
     </properties>
 
     <dependencies>
-        <!--第一部分：对应FirstServlet的依赖 单纯的一个web应用项目的依赖-->
-<!--        <dependency>-->
-<!--            <groupId>javax.servlet</groupId>-->
-<!--            <artifactId>javax.servlet-api</artifactId>-->
-<!--            <version>3.0.1</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-        <!--第三部分：通过断点调试web应用项目添加的依赖-->
+        <!--第一部分：对应FirstServlet的依赖 单纯的一个web应用项目的依赖
+        https://blog.csdn.net/nihaomabmt/article/details/113752940
+        -->
+        <!--        <dependency>-->
+        <!--            <groupId>javax.servlet</groupId>-->
+        <!--            <artifactId>javax.servlet-api</artifactId>-->
+        <!--            <version>3.0.1</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
+
+        <!--第三部分：替换javax.servlet 通过断点调试web应用项目添加的依赖
+        https://blog.csdn.net/nihaomabmt/article/details/113767898-->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
@@ -37,7 +41,8 @@
             <artifactId>tomcat-embed-jasper</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
-        <!--第六部分：Spring项目-->
+        <!--第六部分：Spring项目
+        https://blog.csdn.net/nihaomabmt/article/details/113859017-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
